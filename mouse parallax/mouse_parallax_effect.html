@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse parallax effect</title>
+    <link rel="stylesheet" href="mouse_parallax.css">
+
+</head>
+<body>
+
+   
+    <section id='primo_livello' class='livello primo_livello'>
+        
+        <div class='box'>
+            <h2>bosco</h2> 
+            <div class='circle_top'>
+            
+            </div>            
+            
+        </div>
+        <div class= 'box'id='sfondo'>
+          <button type='button' onclick = "addClass()" id='button1' class="pushable button_clone button_clone_pos">
+            <span id='ombra' class="shadow"></span>
+            <span id='sfondo_problematico' class="edge"></span>
+            <span id="parola" class="front">Tronco</span>
+          </button>
+          <div class='box'id='sfondo'>
+            <button type='button' onclick = "addClass2()" id='button2' class="pushable button_clone button_clone_pos2">
+              <span id='ombra2' class="shadow"></span>
+              <span id='sfondo_problematico2' class="edge"></span>
+              <span id="parola2" class="front">Lupo</span>
+            </button>
+            <div class='box'id='sfondo'>
+              <button  onclick = "addClass3()" id='button3' class="pushable button_clone button_clone_pos3">
+                <span id='ombra3' class="shadow"></span>
+                <span id='sfondo_problematico3' class="edge"></span>
+                <span id="parola3" class="front">Foglie</span>
+              </button></div>
+            <div class="bar_container"> 
+                <span id='parole_mancanti'> Parole trovate 0/3  </span>   
+                <div class="progress progress-infinite">
+                  <div class="progress-bar3"> 
+                      
+                    
+                  </div>                       
+                </div> 
+              </div>
+
+              <div class="level_container"> 
+                <span id='livelli'>  Livello 1  </span>   
+             
+              </div>
+
+
+            
+            
+            <h2></h2> 
+            
+            
+            
+        </div>
+        
+        <div class='box'>
+            <h2></h2> 
+            
+            
+            <div  class="grid-container">
+                
+                
+                <div id='pienezza_cella' class="item1 celle_piene">
+                    <button type='button' onclick = "addClass()" id='button1' class="button1 pushable">
+                        <span id='ombra' class="shadow"></span>
+                        <span id='sfondo_problematico' class="edge"></span>
+                        <span id="parola" class="front">Tronco</span>
+                      </button>
+                      
+                    </div>
+                <div class="item2"></div>
+                <div class="item3"></div>  
+                <div class="item4"></div>
+                <div class="item5 celle_piene"> 
+                    <button id='button' class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Spiaggia</span>
+                  </button>
+                </div>
+                
+                <div class="item6"></div>
+                <div class="item7"></div>
+                <div class="item8"></div>  
+                <div class="item9"></div>
+                <div class="item10"></div>
+                <div class="item11"></div>
+                <div class="item12 celle_piene">
+                   <button id='button' class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Castello</span>
+                  </button>
+                </div>
+                <div class="item13"></div>
+                <div class="item14 celle_piene">
+                    <button  onclick = "addClass2()" id='button2' class="button2 pushable">
+                        <span id='ombra2' class="shadow"></span>
+                        <span id='sfondo_problematico2' class="edge"></span>
+                        <span id="parola2" class="front">Lupo</span>
+                      </button>
+                </div>
+                <div class="item15"></div>
+                <div class="item16"></div>
+                <div class="item17 celle_piene"> 
+                    <button  onclick = "addClass3()" id='button3' class="button3 pushable">
+                    <span id='ombra3' class="shadow"></span>
+                    <span id='sfondo_problematico3' class="edge"></span>
+                    <span id="parola3" class="front">Foglie</span>
+                  </button>
+                </div>
+                <div class="item18"></div>
+                <div class="item19"></div>
+                <div class="item20"></div>
+                <div class="item21 celle_piene">
+                    <button  id='button' class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front">Palazzo</span>
+                      </button>
+                </div>
+                <div class="item22"></div>
+                <div class="item23"></div>
+                <div class="item24"></div>
+                
+                
+                </div>
+                
+        </div>
+        <div class='circle'>
+            
+        </div>
+
+        
+        <div class="first-overlay overlay-text visible"> Trova le parole per costruire la storia!
+            <span class="overlay-text-small" > Clicca per iniziare</span>
+        </div>
+        <div  class="overlay-text vittoria_parziale"> Le hai trovate !
+            <span class="overlay-text-small" > Clicca per andare alla storia</span>
+            <a href="../mountains.html">
+                <i><img src="../images/bosco.png"  ><img ></i>
+            </a>
+        </div>
+
+        <div  class="overlay-text level-up"> Hai completato il primo livello !
+            <span class="overlay-text-small" > Continua al Secondo Livello</span>
+            <a href="#secondo_livello">
+                <i><img id='lupo_img' src="../images/animazione_bosco/wolf-howling-background 2/lupo.jpg"  ><img ></i>
+            </a>
+        </div>
+       
+
+       
+    </section>
+
+    <section id='secondo_livello' class='livello secondo_livello disabilitato'>
+        
+        <div class='box box2'>
+            <h2>Lupo</h2> 
+            <div class='circle_top'>
+            
+            </div>
+            
+            
+            
+        </div>
+        <div class='box box2'id='sfondo'>
+
+          <button type='button' onclick = "secondLeveladdClass()" id='button4' class="pushable button_clone button_clone_pos">
+            <span id='ombra' class="shadow"></span>
+            <span id='sfondo_problematico' class="edge"></span>
+            <span id="parola" class="front">Tana</span>
+          </button>
+          <div class='box'id='sfondo'>
+            <button type='button' onclick = "secondLeveladdClass2()" id='button5' class="pushable button_clone button_clone_pos2">
+              <span id='ombra2' class="shadow"></span>
+              <span id='sfondo_problematico2' class="edge"></span>
+              <span id="parola2" class="front">Branco</span>
+            </button>
+            <div class='box'id='sfondo'>
+              <button  onclick = "secondLeveladdClass3()" id='button6' class="pushable button_clone button_clone_pos3">
+                <span id='ombra3' class="shadow"></span>
+                <span id='sfondo_problematico3' class="edge"></span>
+                <span id="parola3" class="front">Ululare</span>
+              </button></div>
+
+            <div class="bar_container"> 
+                <span id='secondLevel_parole_mancanti'> Parole trovate 0/3  </span>   
+                <div class="progress progress-infinite">
+                  <div class="progress-bar3"> 
+                      
+                    
+                  </div>                       
+                </div> 
+              </div>
+
+              <div class="level_container"> 
+                <span id='livelli'>  Livello 2  </span>   
+             
+              </div>
+
+
+            
+            
+            <h2></h2> 
+            
+            
+            
+        </div>
+        
+        <div class='box box2'>
+            <h2></h2> 
+            
+            
+            <div  class="grid-container">
+                
+                
+                <div id='pienezza_cella' class="item1 celle_piene">
+                  <button id='button' class="pushable">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <span class="front">Volare</span>
+                </button>
+              </div>
+                <div class="item2"></div>
+                <div class="item3"></div>  
+                <div class="item4">
+                  <button type='button' onclick = "secondLeveladdClass()" id='button4' class="button4 pushable">
+                  <span id='secondLevel_ombra' class="shadow"></span>
+                  <span id='secondLevel_sfondo_problematico' class="edge"></span>
+                  <span id="secondLevel_parola" class="front">Tana</span>
+                </button>
+              </div>
+                <div class="item5 celle_piene"> 
+                    <button id='button' class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Mercato</span>
+                  </button></div>
+                
+                <div class="item6"></div>
+                <div class="item7"></div>
+                <div class="item8"></div>  
+                <div class="item9"></div>
+                <div class="item10"> <button  onclick = "secondLeveladdClass2()" id='button5' class="button5 pushable">
+                  <span id='secondLevel_ombra2' class="shadow"></span>
+                  <span id='secondLevel_sfondo_problematico2' class="edge"></span>
+                  <span id="secondLevel_parola2" class="front">Branco</span>
+                </button></div>
+                <div class="item11"></div>
+                <div class="item12 celle_piene"></div>
+                <div class="item13"></div>
+                <div class="item14 celle_piene">
+                   
+                </div>
+                <div class="item15"></div>
+                <div class="item16"></div>
+                <div class="item17 celle_piene"> 
+                <div class="item18"></div>
+                <div class="item19">    <button  id='button' class="pushable">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <span class="front">Vento</span>
+                </button></div>
+                <div class="item20"></div>
+                <div class="item21 celle_piene">
+                
+                </div>
+                <div class="item22"></div>
+                <div class="item23"> <button  onclick = "secondLeveladdClass3()" id='button6' class="button6 pushable">
+                  <span id='secondLevel_ombra3' class="shadow"></span>
+                  <span id='secondLevel_sfondo_problematico3' class="edge"></span>
+                  <span id="secondLevel_parola3" class="front">Ululare</span>
+                </button></div></div>
+                <div class="item24"></div>
+                
+                
+                </div>
+                
+        </div>
+        <div class='circle'>
+            
+        </div>
+
+        
+      
+        <div  class="overlay-text vittoria_parziale"> Le hai trovate !
+            <span class="overlay-text-small" > Clicca per andare alla storia</span>
+            <a href="../mountains.html">
+                <i><img src="../images/bosco.png"  ><img ></i>
+            </a>
+        </div>
+
+        <div  class="overlay-text second-level-up"> Hai completato il secondo livello !
+            <span class="overlay-text-small" > Continua al Terzo Livello</span>
+            <a href="../mountains.html">
+                <i><img src="../images/bosco.png"  ><img ></i>
+            </a>
+        </div>
+       
+
+       
+    </section>
+
+    <script src="script.js">
+        
+         </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+@media screen and (min-width: 1350px){
+
+   /* 
+.sprite_box{
+        
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(962px/2    );
+    height: 319px;
+    background: url(images/lightning.png) no-repeat;
+    stroke-opacity:0;
+    stroke:none;
+    animation: animate 1.3s steps(1) infinite;
+    margin: 20px -329px;
+
+
+}
+
+
+
+
+
+
+
+
+.sprite_box_s{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(962px/4  );
+    height: 319px;
+    background: url(images/lightning.png) no-repeat;
+    stroke-opacity:0;
+    stroke:none;
+    animation: animate 1.1s steps(1) infinite;
+    margin: 30px -100px;
+
+
+}
+/*
+.sprite_box_q{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(962px/4  );
+    height: 319px;
+    background: url(images/lightning.png) no-repeat;
+    stroke-opacity:0;
+    stroke:none;
+    animation: animate 1.1s steps(2) infinite;
+    margin: 30px -100px;
+    
+
+
+
+}
+*/
+.sprite_box_a{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(962px/4  );
+    height: 319px;
+    background: url(images/lightning.png) no-repeat;
+    stroke-opacity:0;
+    stroke:none;
+    animation: animate 1.2s steps(1) infinite;
+    margin: -120px -530px;
+
+
+}
+
+.sprite_box_b{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(962px/4  );
+    height: 319px;
+    background: url(images/lightning.png) no-repeat;
+    stroke-opacity:0;
+    stroke:none;
+    animation: animate 1.2s steps(2) infinite;
+    margin: -120px -530px;
+
+
+}
+}   
+*/
+
+
+
+
+
+
+
+@keyframes animate  {
+    from {
+        background-position: 0;
+
+    }
+
+    to  {
+        background-position: 962px;
+
+    }
+}
+@media screen and (max-width: 300px){
+   
+    .sprite_box{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:calc(962px/2    );
+        height: 319px;
+        background: url(images/lightning.png) no-repeat;
+        stroke-opacity:0;
+        stroke:none;
+        animation: animate 1.3s steps(1) infinite;
+        margin: -230px 29px;
+    
+    
+    }
+    .sprite_box_t{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:calc(962px/2  );
+        height: 319px;
+        background: url(images/lightning.png) no-repeat;
+        stroke-opacity:0;
+        stroke:none;
+        animation: animate 1.3s steps(2) infinite;
+        margin: -230px 29px;
+    
+    
+    }
+
+
+    
+   
+  
+
+
+    .sprite_box_s{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:calc(962px/4  );
+        height: 319px;
+        background: url(images/lightning.png) no-repeat;
+        stroke-opacity:0;
+        stroke:none;
+        animation: animate 1.1s steps(1) infinite;
+        margin: -230px -40px;
+    
+    
+    }
+
+    .sprite_box_q{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:calc(962px/4  );
+        height: 319px;
+        background: url(images/lightning.png) no-repeat;
+        stroke-opacity:0;
+        stroke:none;
+        animation: animate 1.1s steps(2) infinite;
+        margin: -230px -40px;
+    
+    
+    }
+    
+    .sprite_box_a{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:calc(962px/4  );
+        height: 319px;
+        background: url(images/lightning.png) no-repeat;
+        stroke-opacity:0;
+        stroke:none;
+        animation: animate 1.2s steps(1) infinite;
+        margin: -440px -10px;
+    
+    
+    }
+
+    .sprite_box_b{
+        
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:calc(962px/4  );
+        height: 319px;
+        background: url(images/lightning.png) no-repeat;
+        stroke-opacity:0;
+        stroke:none;
+        animation: animate 1.2s steps(2) infinite;
+        margin: -440px -10px;
+    
+    
+
+}
+}

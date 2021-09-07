@@ -1,0 +1,34 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+
+.sprite_box2 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(672px/6  );
+    height: 224px;
+    background: url(images/torcia.png);
+    stroke-opacity:0;
+    stroke:none;
+    animation: animate 1.1s steps(6) infinite;
+    margin: 150px 0px;
+}
+
+
+
+
+@keyframes animate  {
+    from {
+        background-position: 0;
+
+    }
+
+    to  {
+        background-position: 672px;
+
+    }
+}

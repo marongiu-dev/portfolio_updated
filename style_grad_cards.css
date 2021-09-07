@@ -1,0 +1,134 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: consolas;
+
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#111;
+
+}
+
+.container_grad_cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 ;
+    flex-wrap:wrap;
+
+    
+}
+
+.container_grad_cards .box_grad_cards {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color:#fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+
+
+}
+
+.container_grad_cards .box_grad_cards:hover {
+    transform:translateY(-20px)
+}
+
+.container_grad_cards .box_grad_cards::before {
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+
+}
+
+.container_grad_cards .box_grad_cards::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter:blur(30px);
+
+}
+
+.container_grad_cards .box_grad_cards:nth-child(2)::before,
+.container_grad_cards .box_grad_cards:nth-child(2)::after{
+
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+
+
+}
+
+.container_grad_cards .box_grad_cards:nth-child(3)::before,
+.container_grad_cards .box_grad_cards:nth-child(3)::after{
+
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+
+.container_grad_cards .box_grad_cards span {
+    position: absolute;
+    top:6px;
+    left:6px;
+    bottom:6px;
+    background:rgba(0,0,0,0.6);
+    z-index: 2;
+}   
+
+.container_grad_cards .box_grad_cards span::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background: rgba(255,255,255,0,1);
+    pointer-events:none;
+}
+
+.container_grad_cards .box_grad_cards .content_grad_cards {
+    position: relative;
+    z-index: 10;
+    padding:20px 40px;  
+}
+
+.container_grad_cards .box_grad_cards .content_grad_cards h2{
+    font-size: 2em;
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+.container_grad_cards .box_grad_cards .content_grad_cards p{
+    font-size: 1.1em;
+    color:#fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container_grad_cards .box_grad_cards .content_grad_cards a{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding:10px;
+    text-decoration: none;
+    font-weight: 700;
+}
